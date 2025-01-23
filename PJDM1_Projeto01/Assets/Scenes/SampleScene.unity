@@ -229,7 +229,7 @@ GameObject:
   - component: {fileID: 866758756}
   m_Layer: 0
   m_Name: Square (1)
-  m_TagString: Untagged
+  m_TagString: chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -385,9 +385,10 @@ GameObject:
   - component: {fileID: 1470445713}
   - component: {fileID: 1470445716}
   - component: {fileID: 1470445715}
+  - component: {fileID: 1470445717}
   m_Layer: 0
   m_Name: Capsule
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -433,7 +434,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -9095717837082945937, guid: 74753e7db5e73b547afe7b0954be76af, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 139b9693b1461e449b547e697181bfbb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -491,8 +492,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_Size: {x: 1, y: 2}
+  m_Offset: {x: 0, y: -0.55566716}
+  m_Size: {x: 1, y: 2.7649446}
   m_Direction: 0
 --- !u!50 &1470445716
 Rigidbody2D:
@@ -521,6 +522,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &1470445717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470445712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 103e0f45789f8214fb362f4ad901c7d8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidade: 10
+  focaPulo: 10
+  noChao: 0
 --- !u!1 &1755099177
 GameObject:
   m_ObjectHideFlags: 0
@@ -535,7 +551,7 @@ GameObject:
   - component: {fileID: 1755099178}
   m_Layer: 0
   m_Name: Square
-  m_TagString: Untagged
+  m_TagString: chao
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
